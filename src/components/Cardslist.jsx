@@ -1,5 +1,7 @@
+"use client"
+ import { useRouter } from "next/navigation"
 function CardList({ posts }) {
-  console.log(posts);
+   const router = useRouter()
   return (
     <div className="flex flex-wrap">
       {posts.map((post) => (
@@ -12,9 +14,9 @@ function CardList({ posts }) {
               <p className="text-gray-600">{post.body}</p>
             </div>
             <div className="p-4 border-t border-gray-300">
-              <a href="#" className="text-blue-500 hover:underline">
+              <button  className="text-blue-500 hover:underline" onClick={()=>router.push(`/post/${post.id}`)}>
                 Más información
-              </a>
+              </button>
             </div>
           </div>
         </div>
