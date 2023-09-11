@@ -2,7 +2,6 @@
 import { useEffect, useState } from 'react';
 import CardList from '@/components/Cardslist';
 import getPost from '@/helpers/fetchPost';
-import Pagination from '@/components/Paginacion';
 
 const HomePage = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -48,7 +47,6 @@ const HomePage = () => {
         ))}
       </div>
       <CardList posts={posts} />
-      <Pagination totalPages={totalPages} handleonChange={handleonChange} />
     </div>
   );
 };
