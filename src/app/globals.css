@@ -2,14 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@media (max-width: 767px) {
-    .md\\:hidden {
-      display: block !important;
-    }
-  
-    .md\\:flex {
-      display: none !important;
-    }
-  }
- 
