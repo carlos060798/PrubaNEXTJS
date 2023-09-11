@@ -1,32 +1,22 @@
-import Card from "./Carditem";
-
-function CardList() {
-  const cards = [
-    {
-      id: 1,
-      title: 'Tarjeta 1',
-      description: 'Esta es la descripción de la Tarjeta 1. Puedes agregar más detalles aquí.',
-      image: '/imagen1.jpg', // Reemplaza con la URL de la imagen real
-    },
-    {
-      id: 2,
-      title: 'Tarjeta 2',
-      description: 'Esta es la descripción de la Tarjeta 2. Puedes agregar más detalles aquí.',
-      image: '/imagen2.jpg', // Reemplaza con la URL de la imagen real
-    },
-    {
-      id: 3,
-      title: 'Tarjeta 3',
-      description: 'Esta es la descripción de la Tarjeta 3. Puedes agregar más detalles aquí.',
-      image: '/imagen3.jpg', // Reemplaza con la URL de la imagen real
-    },
-  ];
-
+function CardList({ posts }) {
+  console.log(posts);
   return (
     <div className="flex flex-wrap">
-      {cards.map((card) => (
-        <div key={card.id} className="w-full md:w-1/2 lg:w-1/3 p-4">
-          <Card title={card.title} description={card.description} image={card.image} />
+      {posts.map((post) => (
+        <div key={post.id} className="w-full md:w-1/2 lg:w-1/3 p-4">
+          <div className="bg-white rounded-lg shadow-lg">
+            <div className="p-4">
+              <h2 className="text-xl font-bold">
+                {post.id} {post.title}
+              </h2>
+              <p className="text-gray-600">{post.body}</p>
+            </div>
+            <div className="p-4 border-t border-gray-300">
+              <a href="#" className="text-blue-500 hover:underline">
+                Más información
+              </a>
+            </div>
+          </div>
         </div>
       ))}
     </div>
