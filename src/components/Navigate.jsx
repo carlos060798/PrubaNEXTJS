@@ -16,7 +16,7 @@ function NavigatePage() {
          <h1 className='text-white text-xl font-bold'>POSTAPP</h1>
         </div>
         <div className="hidden md:flex space-x-4">
-          <Link href="/" className="text-white">Inicio </Link>
+          <Link href="/" className="text-white">Post</Link>
           <Link href="/about" className="text-white">Acerca de</Link>
         </div>
         <div className="md:hidden">
@@ -32,8 +32,8 @@ function NavigatePage() {
         </div>
       </div>
       {isOpen && (
-        <div className="md:hidden bg-blue-500 text-center"> {/* Aquí se centrará el texto */}
-          <Link  href="/" className="block py-2 px-4 text-white">Inicio</Link>
+       <div className="md:hidden bg-blue-500 text-center">  
+          <Link  href="/" className="block py-2 px-4 text-white">Post</Link>
           <Link  href="/about" className="block py-2 px-4 text-white">Acerca de</Link>
         </div>
       )}
