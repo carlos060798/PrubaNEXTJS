@@ -20,13 +20,7 @@ function AboutPage() {
               </div>
             </div>
             <div>
-              <video
-                src="C:\Users\usuario\Desktop\proyectos\proyectos reac js\nextjs\Prueba Tecnica next js\PrubaNEXTJS\src\app\about\presentacion.mp4" 
-                controls
-                className="w-full rounded-lg shadow-md"
-              >
-                Tu navegador no admite la reproducción de videos.
-              </video>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/l6Wjrf4EyIo?si=9gIfoJzmtFZ3inkc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
           </div>
         </div>
