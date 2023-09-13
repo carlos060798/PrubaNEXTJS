@@ -21,17 +21,14 @@ function AboutPage() {
               </h1>
               <p className="text-lg text-justify mb-4">
                 ¡Hola! 👋🏻 Soy Carlos Danilo Angarita García, Tecnólogo en
-                Análisis y Desarrollo de Sistemas de Información y Abogado de
-                formación. Con experiencia en las tecnologías MERN Stack,
-                Bootstrap, SQL y Git. Mi pasión por aprender y mejorar proyectos
-                para satisfacer a los usuarios es insaciable. Mis habilidades
-                analíticas y de resolución de problemas, adquiridas durante mi
-                experiencia legal, complementan mi conocimiento técnico. Estoy
-                emocionado por crecer en el campo de la programación y enfrentar
-                nuevos desafíos. Si buscas un profesional con pasión por la
-                tecnología y habilidades analíticas, estoy listo para colaborar
-                contigo y alcanzar metas excepcionales en el desarrollo de
-                software. ¡Conéctemos y resolvamos problemas juntos! 🤝🏻
+                Desarrollo de Sistemas de Información y Abogado de formación,
+                con experiencia en MERN Stack, Bootstrap, SQL y Git. Mi pasión
+                por aprender y mejorar proyectos para satisfacer a los usuarios
+                es insaciable. Estoy emocionado por crecer en la programación y
+                enfrentar nuevos desafíos. Si buscas un profesional apasionado
+                por la tecnología y con habilidades analíticas, ¡estoy listo
+                para colaborar y alcanzar metas excepcionales en el desarrollo
+                de software! 🤝🏻
               </p>
             </div>
             <div className="video-container">
@@ -42,7 +39,7 @@ function AboutPage() {
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
-                height="500" /* Altura predeterminada para pantallas grandes */
+                height="400"
               ></iframe>
             </div>
           </div>
@@ -53,7 +50,6 @@ function AboutPage() {
             Mis Habilidades
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {/* Agregamos la clase 'skill-card' para aplicar animaciones */}
             <div className="p-4 bg-white rounded-lg shadow-md text-center skill-card">
               <FaReact className="w-12 h-12 text-blue-500 mx-auto mb-2" />
               <span className="text-lg font-semibold">React.js</span>
@@ -86,7 +82,6 @@ function AboutPage() {
             Mis Hobbies
           </h2>
           <div className="flex justify-center flex-wrap gap-4">
-            {/* Agregamos la clase 'hobby-card' para aplicar animaciones */}
             <div className="p-4 bg-white rounded-lg shadow-md text-center hobby-card">
               <FaBook className="w-12 h-12 text-blue-500 mx-auto mb-2" />
               <span className="text-lg font-semibold">Lectura</span>

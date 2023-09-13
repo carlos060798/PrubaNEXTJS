@@ -19,7 +19,7 @@ function HomePage() {
             onClick={() => handleUserButtonClick(userId + 1)}
             className={`px-4 py-2 rounded ${
               selectedUserId === userId + 1
-                ? "bg-blue-500 text-white slide-in-animation" // Aplica la clase de animación
+                ? "bg-blue-500 text-white slide-in-animation" 
                 : "bg-gray-200"
             }`}
           >

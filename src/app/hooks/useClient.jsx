@@ -24,7 +24,7 @@ function useClient() {
 
   const handleUserButtonClick = (userId) => {
     setSelectedUserId(userId);
-    setCurrentPage(1); // Volver a la primera página al cambiar el usuario
+    setCurrentPage(1); 
   };
 
   return {
