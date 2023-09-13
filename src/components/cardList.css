@@ -1,0 +1,12 @@
+
+  /* CardList.css */
+  .card-enter {
+    transform: translateX(-100%); /* Empieza desde la izquierda */
+    opacity: 0; /* Comienza invisible */
+  }
+  
+  .card-enter-active {
+    transform: translateX(0); /* Termina en su posición normal (derecha) */
+    opacity: 1; /* Termina completamente visible */
+    transition: transform 5s ease, opacity 5s ease; /* Duración de 5 segundos con velocidad media */
+  }

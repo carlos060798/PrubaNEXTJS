@@ -2,6 +2,7 @@
 import React from "react";
 import CardList from "@/components/Cardslist";
 import useClient from "./hooks/useClient";
+import './globals.css';
 
 function HomePage() {
   const { posts, selectedUserId, handleUserButtonClick } = useClient();
@@ -18,7 +19,7 @@ function HomePage() {
             onClick={() => handleUserButtonClick(userId + 1)}
             className={`px-4 py-2 rounded ${
               selectedUserId === userId + 1
-                ? "bg-blue-500 text-white"
+                ? "bg-blue-500 text-white slide-in-animation" // Aplica la clase de animación
                 : "bg-gray-200"
             }`}
           >
@@ -32,3 +33,4 @@ function HomePage() {
 }
 
 export default HomePage;
+

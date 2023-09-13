@@ -2,3 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Agrega una clase para aplicar la animación */
+  .slide-in-animation {
+    animation: slideIn 3s ease;
+  }
