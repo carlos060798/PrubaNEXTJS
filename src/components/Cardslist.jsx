@@ -8,8 +8,8 @@ function CardList({ posts }) {
       <div key={post.id} className="w-full md:w-1/2 lg:w-1/3 p-4">
         <div className="bg-white rounded-lg shadow-lg p-4 h-full flex flex-col justify-between">
           <div>
-            <h2 className="text-xl font-bold mb-2">
-              {post.id} - {post.title}
+            <h2 className="text-xl font-bold text-blue-500 mb-2">
+              {post.id} - Titulo del post: {post.title}
             </h2>
             <p className="text-gray-600">{post.body}</p>
           </div>
