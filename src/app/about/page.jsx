@@ -1,5 +1,12 @@
 import React from "react";
-import { FaReact, FaNodeJs, FaJs, FaDatabase, FaServer, FaGit } from "react-icons/fa";
+import {
+  FaReact,
+  FaNodeJs,
+  FaJs,
+  FaDatabase,
+  FaServer,
+  FaGit,
+} from "react-icons/fa";
 import { FaBook, FaDumbbell, FaMusic } from "react-icons/fa";
 
 function AboutPage() {
@@ -11,16 +18,23 @@ function AboutPage() {
             <div className="md:row-span-2">
               <div className="bg-blue-500 text-white p-8 rounded-lg mb-8">
                 <h1 className="text-4xl font-bold text-center mb-4">
-                  ¡Hola, soy [Tu Nombre]!
+                  ¡Hola, soy [Carlos]!
                 </h1>
-                <p className="text-lg text-center mb-4">
-                  ¡Bienvenido a mi mundo digital! Soy un apasionado
-                  desarrollador web en busca de nuevos desafíos.
+                <p className="text-lg text-justify mb-4">
+                ¡Hola! 👋🏻 Soy Carlos Danilo Angarita García, Tecnólogo en Análisis y Desarrollo de Sistemas de Información y Abogado de formación. Con experiencia en las tecnologías MERN Stack, Bootstrap, SQL y Git. Mi pasión por aprender y mejorar proyectos para satisfacer a los usuarios es insaciable. Mis habilidades analíticas y de resolución de problemas, adquiridas durante mi experiencia legal, complementan mi conocimiento técnico. Estoy emocionado por crecer en el campo de la programación y enfrentar nuevos desafíos. Si buscas un profesional con pasión por la tecnología y habilidades analíticas, estoy listo para colaborar contigo y alcanzar metas excepcionales en el desarrollo de software. ¡Conéctemos y resolvamos problemas juntos! 🤝🏻
                 </p>
               </div>
             </div>
             <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/l6Wjrf4EyIo?si=9gIfoJzmtFZ3inkc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe
+                className="w-full "
+                height="315"
+                src="https://www.youtube.com/embed/l6Wjrf4EyIo?si=9gIfoJzmtFZ3inkc"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
             </div>
           </div>
         </div>
