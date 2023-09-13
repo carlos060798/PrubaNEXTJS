@@ -15,3 +15,53 @@
   .slide-in-animation {
     animation: slideIn 3s ease;
   }
+
+  /* Estilos para igualar la altura de description-container y video-container */
+/* Estilo predeterminado para pantallas grandes */
+.video-frame {
+  height: 500px;
+}
+
+/* Estilo para pantallas medianas (por ejemplo, tablets) */
+@media (max-width: 768px) {
+  .video-frame {
+    height: 400px;
+  }
+}
+
+/* Estilo para pantallas pequeñas (por ejemplo, dispositivos móviles) */
+@media (max-width: 576px) {
+  .video-frame {
+    height: 315px;
+  }
+}
+
+
+/* Estilos para la animación de escala en las tarjetas de habilidades y hobbies */
+.skill-card,
+.hobby-card {
+  transition: transform 0.3s ease; /* Transición suave al cambiar la escala */
+}
+
+/* Estilos para la animación cuando el mouse pasa sobre las tarjetas */
+.skill-card:hover,
+.hobby-card:hover {
+  transform: scale(1.05); /* Aumenta el tamaño al pasar el mouse */
+}
+
+/* Estilos adicionales para la página */
+.bg-gray-100 {
+  background-color: #f4f4f4; /* Color de fondo gris */
+}
+
+.container {
+  max-width: 1024px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar el contenido */
+  padding: 16px;
+}
+
+.text-blue-500 {
+  color: #007bff; /* Color de texto azul */
+}
+
+/* Puedes personalizar más estilos según tus preferencias aquí */

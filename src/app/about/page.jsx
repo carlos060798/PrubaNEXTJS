@@ -15,25 +15,34 @@ function AboutPage() {
       <div className="container mx-auto p-8">
         <div className="my-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
-            <div className="md:row-span-2">
-              <div className="bg-blue-500 text-white p-8 rounded-lg mb-8">
-                <h1 className="text-4xl font-bold text-center mb-4">
-                  ¡Hola, soy [Carlos]!
-                </h1>
-                <p className="text-lg text-justify mb-4">
-                ¡Hola! 👋🏻 Soy Carlos Danilo Angarita García, Tecnólogo en Análisis y Desarrollo de Sistemas de Información y Abogado de formación. Con experiencia en las tecnologías MERN Stack, Bootstrap, SQL y Git. Mi pasión por aprender y mejorar proyectos para satisfacer a los usuarios es insaciable. Mis habilidades analíticas y de resolución de problemas, adquiridas durante mi experiencia legal, complementan mi conocimiento técnico. Estoy emocionado por crecer en el campo de la programación y enfrentar nuevos desafíos. Si buscas un profesional con pasión por la tecnología y habilidades analíticas, estoy listo para colaborar contigo y alcanzar metas excepcionales en el desarrollo de software. ¡Conéctemos y resolvamos problemas juntos! 🤝🏻
-                </p>
-              </div>
+            <div className="md:row-span-2 bg-blue-500 text-white p-8 rounded-lg mb-8 description-container">
+              <h1 className="text-4xl font-bold text-center mb-4">
+                ¡Hola, soy [Carlos]!
+              </h1>
+              <p className="text-lg text-justify mb-4">
+                ¡Hola! 👋🏻 Soy Carlos Danilo Angarita García, Tecnólogo en
+                Análisis y Desarrollo de Sistemas de Información y Abogado de
+                formación. Con experiencia en las tecnologías MERN Stack,
+                Bootstrap, SQL y Git. Mi pasión por aprender y mejorar proyectos
+                para satisfacer a los usuarios es insaciable. Mis habilidades
+                analíticas y de resolución de problemas, adquiridas durante mi
+                experiencia legal, complementan mi conocimiento técnico. Estoy
+                emocionado por crecer en el campo de la programación y enfrentar
+                nuevos desafíos. Si buscas un profesional con pasión por la
+                tecnología y habilidades analíticas, estoy listo para colaborar
+                contigo y alcanzar metas excepcionales en el desarrollo de
+                software. ¡Conéctemos y resolvamos problemas juntos! 🤝🏻
+              </p>
             </div>
-            <div>
+            <div className="video-container">
               <iframe
-                className="w-full "
-                height="315"
+                className="w-full video-frame"
                 src="https://www.youtube.com/embed/l6Wjrf4EyIo?si=9gIfoJzmtFZ3inkc"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
+                height="500" /* Altura predeterminada para pantallas grandes */
               ></iframe>
             </div>
           </div>
@@ -44,27 +53,28 @@ function AboutPage() {
             Mis Habilidades
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <div className="p-4 bg-white rounded-lg shadow-md text-center">
+            {/* Agregamos la clase 'skill-card' para aplicar animaciones */}
+            <div className="p-4 bg-white rounded-lg shadow-md text-center skill-card">
               <FaReact className="w-12 h-12 text-blue-500 mx-auto mb-2" />
               <span className="text-lg font-semibold">React.js</span>
             </div>
-            <div className="p-4 bg-white rounded-lg shadow-md text-center">
+            <div className="p-4 bg-white rounded-lg shadow-md text-center skill-card">
               <FaNodeJs className="w-12 h-12 text-blue-500 mx-auto mb-2" />
               <span className="text-lg font-semibold">Node.js</span>
             </div>
-            <div className="p-4 bg-white rounded-lg shadow-md text-center">
+            <div className="p-4 bg-white rounded-lg shadow-md text-center skill-card">
               <FaJs className="w-12 h-12 text-blue-500 mx-auto mb-2" />
               <span className="text-lg font-semibold">JavaScript</span>
             </div>
-            <div className="p-4 bg-white rounded-lg shadow-md text-center">
+            <div className="p-4 bg-white rounded-lg shadow-md text-center skill-card">
               <FaServer className="w-12 h-12 text-blue-500 mx-auto mb-2" />
               <span className="text-lg font-semibold">Mysql</span>
             </div>
-            <div className="p-4 bg-white rounded-lg shadow-md text-center">
+            <div className="p-4 bg-white rounded-lg shadow-md text-center skill-card">
               <FaDatabase className="w-12 h-12 text-blue-500 mx-auto mb-2" />
               <span className="text-lg font-semibold">Mongo</span>
             </div>
-            <div className="p-4 bg-white rounded-lg shadow-md text-center">
+            <div className="p-4 bg-white rounded-lg shadow-md text-center skill-card">
               <FaGit className="w-12 h-12 text-blue-500 mx-auto mb-2" />
               <span className="text-lg font-semibold">Git</span>
             </div>
@@ -76,15 +86,16 @@ function AboutPage() {
             Mis Hobbies
           </h2>
           <div className="flex justify-center flex-wrap gap-4">
-            <div className="p-4 bg-white rounded-lg shadow-md text-center">
+            {/* Agregamos la clase 'hobby-card' para aplicar animaciones */}
+            <div className="p-4 bg-white rounded-lg shadow-md text-center hobby-card">
               <FaBook className="w-12 h-12 text-blue-500 mx-auto mb-2" />
               <span className="text-lg font-semibold">Lectura</span>
             </div>
-            <div className="p-4 bg-white rounded-lg shadow-md text-center">
+            <div className="p-4 bg-white rounded-lg shadow-md text-center hobby-card">
               <FaDumbbell className="w-12 h-12 text-blue-500 mx-auto mb-2" />
               <span className="text-lg font-semibold">Ejercicio</span>
             </div>
-            <div className="p-4 bg-white rounded-lg shadow-md text-center">
+            <div className="p-4 bg-white rounded-lg shadow-md text-center hobby-card">
               <FaMusic className="w-12 h-12 text-blue-500 mx-auto mb-2" />
               <span className="text-lg font-semibold">Música</span>
             </div>
